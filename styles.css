@@ -398,7 +398,7 @@ body.tribute-page .content h2 {
 }
 
 .grades-table {
-  border: 1px solid black;
+  border: 3px solid black;
   width: 100%;
   border-collapse: collapse;
   margin: 16px 0 8px;
@@ -414,7 +414,7 @@ body.tribute-page .content h2 {
 
 .grades-table th,
 .grades-table td {
-  border: 1px solid #d7dfe9;
+  border: 3px solid black;
   padding: 10px 14px;
   text-align: left;
 }
