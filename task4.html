@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 — Table &amp; Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-link" href="index.html">Task 1</a>
+    <a class="nav-link" href="task2.html">Task 2</a>
+    <a class="nav-link" href="task3.html">Task 3</a>
+    <a class="nav-link active" href="task4.html">Task 4</a>
+    <a class="nav-link" href="task5.html">Task 5</a>
+  </nav>
+
+  <main class="page">
+
+    <h1 id="page-title">Grades &amp; Feedback</h1>
+
+    <h2>Grade table</h2>
+    <p>
+      A summary of grades for the first four weeks of the semester, including
+      one merged header cell and one merged row for a two-part assignment.
+    </p>
+
+    <table class="grades-table">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Subject</th>
+          <th colspan="2">Assignment</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Week 1</td>
+          <td>HTML &amp; CSS</td>
+          <td colspan="2">Personal page (Task 1)</td>
+          <td>95</td>
+        </tr>
+        <tr class="highlight-row">
+          <td rowspan="2">Week 2</td>
+          <td rowspan="2">HTML &amp; CSS</td>
+          <td>Layout, part A</td>
+          <td>Div &amp; float structure</td>
+          <td>88</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Layout, part B</td>
+          <td>Sidebar &amp; content styling</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Week 3</td>
+          <td>HTML &amp; CSS</td>
+          <td colspan="2">Tribute page (Task 3)</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Week 4</td>
+          <td>HTML &amp; CSS</td>
+          <td colspan="2">Table &amp; form (Task 4)</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-note">Highlighted rows show a two-part assignment merged with <code>rowspan</code>.</p>
+
+    <h2>Feedback form</h2>
+    <p>Share a quick thought about this course.</p>
+
+    <form class="feedback-form" id="feedback-form" action="#" method="post">
+
+      <div class="form-row">
+        <label for="full-name">Full name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-row">
+        <label for="topic">What is this about?</label>
+        <select id="topic" name="topic">
+          <option value="course">The course content</option>
+          <option value="assignment">This assignment</option>
+          <option value="platform">The Moodle platform</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <span class="form-label">Overall experience</span>
+        <div class="radio-group">
+          <label><input type="radio" name="experience" value="great"> Great</label>
+          <label><input type="radio" name="experience" value="ok" checked> OK</label>
+          <label><input type="radio" name="experience" value="poor"> Needs work</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your feedback here..."></textarea>
+      </div>
+
+      <button type="submit" class="btn submit-btn">Submit feedback</button>
+
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Saginbek Mansur. Assignment #1, Task 4.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 — Div &amp; Float Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-link" href="index.html">Task 1</a>
+    <a class="nav-link active" href="task2.html">Task 2</a>
+    <a class="nav-link" href="task3.html">Task 3</a>
+    <a class="nav-link" href="task4.html">Task 4</a>
+    <a class="nav-link" href="task5.html">Task 5</a>
+  </nav>
+
+  <div class="layout">
+
+    <div class="site-header">
+      <h1>Div &amp; Float Layout</h1>
+      <p>Task 2 — a page built only with &lt;div&gt; and CSS floats/positioning.</p>
+    </div>
+
+    <div class="section-nav">
+      <a href="index.html">Task 1</a>
+      <a href="task2.html">Task 2</a>
+      <a href="task3.html">Task 3</a>
+      <a href="task4.html">Task 4</a>
+    </div>
+
+    <div class="body-columns">
+
+      <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#layout-notes">Layout notes</a></li>
+          <li><a href="#css-notes">CSS notes</a></li>
+          <li><a href="#summary">Summary</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h2 id="overview">Page overview</h2>
+        <p>
+          This page reproduces a classic two-column layout without Flexbox or
+          Grid. Every block below is a plain &lt;div&gt;, positioned with
+          <code>float</code> and spaced with margin and padding, the way pages
+          were commonly built before Flexbox and Grid existed.
+        </p>
+
+        <h2 id="layout-notes">Layout notes</h2>
+        <p>
+          The sidebar on the left is floated left and given a fixed width.
+          This content block is floated right and takes up the remaining
+          space. The parent container clears both floats afterwards so the
+          footer below sits underneath them instead of climbing up the page.
+        </p>
+
+        <h2 id="css-notes">CSS notes</h2>
+        <p>
+          Each section here has its own background color, padding and border
+          so the structure is visible at a glance: header, in-page nav,
+          sidebar, content and footer are all clearly separated blocks.
+        </p>
+
+        <h2 id="summary">Summary</h2>
+        <p>
+          Together these pieces produce the required output: a header on
+          top, a navigation bar below it, a two-column middle section, and
+          a footer pinned to the bottom.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="site-footer">
+      <p>&copy; 2026 Saginbek Mansur. Assignment #1, Task 2.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
